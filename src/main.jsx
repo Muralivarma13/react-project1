@@ -9,6 +9,7 @@ import FruitsList from './components/Fruits.jsx'
 import Customnavbar from './components/customNavbar.jsx';
 import CustomCoursel from './components/customCoursel.jsx';
 import { CustomSpinner } from './components/customSpinner.jsx';
+import Customcard from './components/customCard.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
     <Customnavbar/>
     <CustomCoursel/>
     <CustomSpinner/>
+    <Customcard/>
   
     {/* <UserList/> */}
     <FruitsList/>
