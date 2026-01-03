@@ -10,16 +10,11 @@ import Customnavbar from './components/customNavbar.jsx';
 import CustomCoursel from './components/customCoursel.jsx';
 import { CustomSpinner } from './components/customSpinner.jsx';
 import Customcard from './components/customCard.jsx';
+import Appliction from './components/Appliction.jsx';
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Customnavbar/>
-    <CustomCoursel/>
-    <CustomSpinner/>
-    <Customcard/>
-  
-    {/* <UserList/> */}
-    <FruitsList/>
+  <Appliction/>  
   </StrictMode>,
 )

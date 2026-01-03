@@ -9,7 +9,8 @@ function Customnavbar () {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">Blinkit</Navbar.Brand>
+        <Navbar.Brand href="#"><img src="/blinkit_img.jpg" alt="Blinkit Logo" className="d-inline-block align-top" width="120" height="40" />
+</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
