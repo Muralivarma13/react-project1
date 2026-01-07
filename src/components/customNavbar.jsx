@@ -4,13 +4,14 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router';
 
 function Customnavbar () {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary" fixed='top'>
       <Container fluid>
-        <Navbar.Brand href="#"><img src="/blinkit_img.jpg" alt="Blinkit Logo" className="d-inline-block align-top" width="120" height="40" />
-</Navbar.Brand>
+    <Link to="/">    <Navbar.Brand  href="/"><img src="/blinkit_img.jpg" alt="Blinkit Logo" className="d-inline-block align-top" width="120" height="40" />
+</Navbar.Brand></Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -18,8 +19,8 @@ function Customnavbar () {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link href="/about">about</Nav.Link>
+            <Nav.Link href="/service">service</Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">

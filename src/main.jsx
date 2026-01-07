@@ -11,10 +11,24 @@ import CustomCoursel from './components/customCoursel.jsx';
 import { CustomSpinner } from './components/customSpinner.jsx';
 import Customcard from './components/customCard.jsx';
 import Appliction from './components/Appliction.jsx';
+import { BrowserRouter,Route,Routes } from "react-router";
 
+import About from "./components/About.jsx";
+import PAgeNotFound from './components/PageNotfound.jsx';
+import Recipe from './components/Recipe.jsx';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-  <Appliction/>  
-  </StrictMode>,
+
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/recipe/:id" element={<Recipe />} />
+       <Route path="*" element={<PAgeNotFound />} />
+    </Routes>
+  </BrowserRouter>,
+
+
+  // <Appliction/>  
+ 
 )
